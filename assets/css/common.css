@@ -1,0 +1,293 @@
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    margin: -1px;
+    clip: rect(0, 0, 0, 0);
+}
+
+.hidden {
+    overflow: hidden;
+}
+
+.skip-nav {
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.skip-nav a {
+    position: absolute;
+    top: -50px;
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+}
+
+.skip-nav a:focus,
+.skip-nav a:active {
+    top: 0;
+}
+
+.top-banner {
+    height: 40px;
+    background: #000;
+}
+
+.top-banner .swiper {
+    height: 100%;
+}
+
+.top-banner .swiper-wrapper {
+    height: 100%;
+}
+
+.top-banner .swiper-slide {
+    color: #fff;
+}
+
+.top-banner .swiper-slide .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 13px;
+    color: #fff;
+}
+
+.top-banner .swiper-slide .bannner-text em {
+    font-weight: 700;
+}
+
+.top-banner .swiper-slide .bannner-text .tit {
+    margin-right: 1px;
+}
+
+.top-banner .swiper-slide .icon-wrap {
+    display: flex;
+    align-items: center;
+    margin-left: 4px;
+}
+
+.top-banner .swiper-slide .chan {
+    display: block;
+    width: 17px;
+    height: 18px;
+    background: url(../images/icon/ico_banner_ch.png) no-repeat;
+    background-size: cover;
+}
+
+.top-banner .swiper-slide .arrow {
+    display: block;
+    width: calc(16px * 6 / 11);
+    height: 16px;
+    background: url(../images/icon/ico_banner_arrow.png) no-repeat;
+    background-size: auto 70%;
+    background-position: center right;
+}
+
+.sc-cate {
+    padding-left: 20px;
+}
+
+.sc-cate .sc-tit {
+    padding: 30px 0;
+    line-height: 24px;
+}
+
+.sc-cate .prd-info {
+    padding: 15px 5% 0;
+}
+
+main .main-tit {
+    padding: 50px 16px 22px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+main .sc-tit {
+    display: block;
+    font-size: 20px;
+    color: #333;
+    letter-spacing: -0.05em;
+    font-weight: 600;
+}
+
+main .link-best {
+    margin-top: 50px;
+}
+
+
+/* 베스트 / 이달의 신상  더보기 링크 박스 */
+main .link-more {
+    display: block;
+    padding: 16px 0;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #C8CBD2;
+}
+
+main .link-more::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16.5px;
+    background: url(../images/icon/ico_link_arrow.png) no-repeat;
+    background-size: contain;
+}
+
+main .link-more .tit {
+    line-height: 120%;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+main .link-more .tit em {
+    margin-right: 5px;
+}
+
+main .link-inner .link-view {
+    display: block;
+    padding: 16px 0;
+    font-weight: 500;
+    color: #000;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #C8CBD2;
+}
+
+main .prd-info .review {
+    display: block;
+    margin-top: 6px;
+    color: #8e1f29;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+main .prd-info .name {
+    display: block;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+main .prd-info .price-box {
+    display: flex;
+    align-items: center;
+}
+
+main .prd-info .price-box .discount {
+    margin-right: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #8E1F29;
+}
+
+main .prd-info .price-box .curr {
+    line-height: 16px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+}
+
+main .prd-info .price-box .ori {
+    margin-left: 5px;
+    font-size: 13px;
+    color: #8d8d8d;
+    text-decoration: line-through;
+}
+
+main .prd-info .box-text {
+    display: inline-block;
+    padding: 5px 6px 4px 6px;
+    margin: 10px 0 5px;
+    font-size: 10px;
+    font-weight: 600;
+    color: #8e1f28;
+    border: 1px solid rgba(142, 31, 41, 0.5);
+    box-sizing: border-box;
+}
+
+.point::after {
+    content: '';
+    display: inline-block;
+    position: relative;
+    top: -8px;
+    right: -2px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #ee5728;
+}
+
+.fixed-btn {
+    opacity: 0;
+    position: fixed;
+    right: 10px;
+    bottom: 50px;
+    z-index: 20;
+    width: 50px;
+    border: 1px solid #e9e9e9;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: all .3s;
+}
+
+body.hidden .fixed-btn {
+    opacity: 0;
+}
+
+.fixed-btn.hide {
+    opacity: 0;
+}
+
+.fixed-btn.show {
+    opacity: 1;
+}
+
+.fixed-btn .link {
+    display: block;
+    padding: 5px;
+}
+
+.fixed-btn .box {
+    width: 50px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.fixed-btn .kakaobox {
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.fixed-btn .kakaobox .link {
+    width: 40px;
+    height: 30px;
+    margin-top: 4px;
+    background: url(../images/icon/ico_top_kakao.png) no-repeat center/contain;
+}
+
+.fixed-btn .kakaobox .tit {
+    display: block;
+    padding-top: 10px;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: -0.04em;
+    font-weight: 500;
+    text-align: center;
+    color: #595959;
+}
+
+.fixed-btn .topbox .link {
+    height: 24px;
+    padding: 24px 20px 14px;
+    background: url(../images/icon/ico_btn_top.png) no-repeat center/contain;
+    background-size: 19px auto;
+    box-sizing: border-box;
+}

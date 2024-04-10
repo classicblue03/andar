@@ -1,0 +1,476 @@
+/* sc-best, sc-new 공통요소 */
+.sc-item .prd-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sc-item .prd-item {
+    width: 50%;
+    padding-bottom: 50px;
+}
+
+.sc-item .prd-item img {
+    width: 100%;
+}
+
+.sc-item .prd-item:nth-child(odd) {
+    padding-right: 1.11%;
+}
+
+.sc-item .prd-item:nth-child(even) {
+    padding-left: 1.11%;
+}
+
+.sc-item .prd-item .rank {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 24px;
+    line-height: 24px;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    background-color: #000;
+}
+
+.sc-theme .inner {
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+.sc-theme .group-text {
+    padding: 16px 0;
+}
+
+.sc-theme .group-text .tit {
+    display: block;
+    line-height: 35px;
+    font-size: 26px;
+    color: #333;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+}
+
+.sc-theme .group-text .desc {
+    padding: 14px 0 28px;
+    line-height: 26px;
+    font-size: 16px;
+    color: #333;
+    letter-spacing: -0.05em;
+}
+
+.sc-theme .group-text .link-product::after {
+    position: absolute;
+}
+
+.sc-theme .prd-box {
+    display: flex;
+    padding: 20px 0;
+}
+
+.sc-theme .prd-box .link-prd {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 110px;
+    margin-right: 28px;
+}
+
+.sc-theme .prd-box:nth-child(odd) {
+    border-bottom: 1px solid #eee;
+}
+
+.sc-theme .link-product {
+    display: inline-block;
+    line-height: 20px;
+    padding: 8px 47px 8px 18px;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: -0.03em;
+    font-weight: 600;
+    border-radius: 2px;
+    border: 1px solid #1e1e1e;
+    box-sizing: border-box;
+    background: #1e1e1e url(../images/icon/ico_link_view.png) no-repeat;
+    background-size: 15px auto;
+    background-position: calc(100% - 18px) center;
+}
+
+
+/* 메인슬라이드 */
+.sc-visual {
+    height: calc(100vh - 140px);
+}
+
+.sc-visual .visual-slide {
+    height: 100%;
+}
+
+.sc-visual .swiper-slide .link {
+    display: block;
+    height: 100%;
+}
+
+.sc-visual .swiper-slide img {
+    max-width: 450px;
+    height: 100%;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.sc-visual .pagination {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 40px;
+}
+
+.sc-visual .pagination .swiper-pagination-bullet {
+    width: 20px;
+    height: 2px;
+    margin: 0;
+    background: #fff;
+    border-radius: 0;
+}
+
+.sc-brand .main-tit {
+    font-size: 28px;
+    color: #212326;
+}
+
+.sc-brand .group-brand .link-area img {
+    width: 100%;
+}
+
+.sc-brand .group-brand .link2 .text-wrap {
+    padding: 32px 24px 44px;
+    background: #6d858c;
+}
+
+.sc-brand .group-brand .link2 .text-wrap .tit {
+    line-height: 1.3;
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.sc-brand .group-brand .link2 .text-wrap .desc {
+    color: #fff;
+    font-size: 13px;
+    line-height: 1.6;
+    letter-spacing: -0.02em;
+    margin-top: 12px;
+}
+
+.sc-brand .group-brand .link2 .text-wrap .link-text {
+    display: inline-block;
+    margin-top: 28px;
+    line-height: 1.3;
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+/* BEST 상품 */
+.sc-best {
+    padding-bottom: 60px;
+}
+
+.sc-best .main-tit {
+    font-size: 28px;
+    color: #212326;
+}
+
+.sc-best .tab-list {
+    display: flex;
+    gap: 10px;
+    margin-left: 2px;
+    margin-bottom: 22px;
+    padding-left: 16px;
+}
+
+.sc-best .tab-list .tab {
+    display: inline-block;
+    padding: 9px 10px;
+    line-height: normal;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: -.5px;
+    color: #77797E;
+}
+
+.sc-best .tab-list .tab.active {
+    border-radius: 60px;
+    color: #fff;
+    background: #B75622;
+}
+
+.sc-best .prd-info {
+    padding: 15px 5% 0;
+}
+
+.sc-best .prd-wrap {
+    display: none;
+}
+
+.sc-best .prd-wrap.active {
+    display: block;
+}
+
+.sc-best .prd-item .link-img {
+    position: relative;
+}
+
+.sc-best .prd-item .link-img::before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 15px;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+}
+
+.sc-best .prd-item:first-child .link-img::before {
+    content: '1';
+}
+
+.sc-best .prd-item:nth-child(2) .link-img::before {
+    content: '2';
+}
+
+.sc-best .prd-item:nth-child(3) .link-img::before {
+    content: '3';
+}
+
+.sc-best .prd-item:nth-child(4) .link-img::before {
+    content: '4';
+}
+
+.sc-best .link-more {
+    margin: 0 16px;
+}
+
+.sc-best .link-more .tit em {
+    color: #C86733;
+}
+
+
+/* 배너 슬라이드 */
+.sc-banner {
+    position: relative;
+}
+
+.sc-banner .swiper .control-wrap {
+    z-index: 1;
+    position: absolute;
+    top: 6px;
+    right: 12px;
+    bottom: auto;
+    left: auto;
+    width: auto;
+    padding: 2px 6px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.90);
+    background-color: rgba(28, 28, 28, 0.70);
+    border-radius: 20px;
+}
+
+/* 테마별 상품 */
+.sc-theme {
+    margin-top: 60px;
+}
+
+/* 고객님을 위한 추천 아이템  */
+.sc-recom {
+    position: relative;
+}
+
+.sc-recom .main-tit {
+    line-height: 29px;
+    text-indent: 8px;
+    font-size: 20px;
+}
+
+.sc-recom .swiper {
+    position: relative;
+    padding-bottom: 100px;
+    margin: 10px 3px 10px 5px;
+}
+
+.sc-recom .swiper-slide {
+    margin-top: 0 !important;
+}
+
+.sc-recom .swiper-slide img {
+    width: 100%;
+}
+
+.sc-recom .swiper-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 50px 0;
+}
+
+.sc-recom .swiper .pagination {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.sc-recom .swiper .pagination .swiper-pagination-bullet {
+    width: 20px;
+    height: 2px;
+    margin: 0;
+    background: #000;
+    border-radius: 0;
+}
+
+.sc-recom .swiper .prd-info {
+    margin-top: 10px;
+}
+
+
+/* 이달의 신상 */
+.sc-new {
+    padding-bottom: 65px;
+}
+
+.sc-new .main-tit {
+    line-height: 1;
+    font-size: 28px;
+    color: #212326;
+}
+
+.sc-new .prd-item .prd-info {
+    padding: 15px 5% 0;
+}
+
+.sc-new .link-more {
+    margin: 0 38px;
+}
+
+
+/* 브랜드 스토리 */
+.sc-story {
+    background-color: #C86733;
+}
+
+.sc-story .link-brand {
+    display: block;
+    padding: 36px 20px;
+}
+
+.sc-story .link-brand .text-wrap {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.sc-story .link-brand .text-wrap .sub-tit {
+    display: inline-block;
+    font-size: 15px;
+    line-height: 1.4;
+    letter-spacing: -0.03em;
+    font-weight: 400;
+    color: #fff;
+}
+
+.sc-story .link-brand .text-wrap .tit {
+    display: inline-block;
+    margin: 10px 0;
+    line-height: 32px;
+    font-size: 30px;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+    color: #fff;
+}
+
+.sc-story .link-brand .text-wrap .desc {
+    line-height: 1.4;
+    font-size: 12px;
+    letter-spacing: -0.02em;
+    font-weight: 400;
+    color: #fff;
+}
+
+.sc-story .link-brand .link-box {
+    display: inline-block;
+    width: 100px;
+    padding: 10px 0;
+    line-height: 14px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+}
+
+/* 세트 */
+.sc-set {
+    padding-bottom: 74px;
+}
+
+
+/* 안다르 멤버십 / 오프라인 스토어 */
+.sc-andar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sc-andar .group-membership {
+    padding: 65px 20px;
+    background: url(../images/bg-membership.jpg) no-repeat;
+    background-size: cover;
+}
+
+.sc-andar .group-offline {
+    padding: 80px 20px 74px;
+    background: url(../images/bg-store.jpg) no-repeat;
+    background-size: cover;
+}
+
+.sc-andar .text-wrap .tit {
+    font-size: 26px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.sc-andar .text-wrap .desc {
+    padding: 15px 0 30px;
+    line-height: 140%;
+    font-size: 15px;
+    letter-spacing: -0.02em;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.sc-andar .link-detail {
+    display: inline-block;
+    padding: 7px 25px 8px;
+    line-height: 18px;
+    font-size: 15px;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+@media screen and (max-width: 992px) {
+    .sc-best .tab-list {
+        justify-content: center;
+    }
+}
